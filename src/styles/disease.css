@@ -1,0 +1,99 @@
+.disease-upload-panel,
+.disease-result-panel {
+  border-radius: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 22px 60px rgba(83, 130, 175, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.disease-upload-panel {
+  padding: 2rem;
+}
+
+.upload-dropzone {
+  display: flex;
+  min-height: 320px;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgba(27, 167, 132, 0.34);
+  border-radius: 1.8rem;
+  background: linear-gradient(180deg, rgba(241, 251, 246, 0.92), rgba(242, 248, 255, 0.92));
+  padding: 2rem;
+}
+
+.upload-symbol {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1ba784 0%, #2f7cf6 100%);
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.upload-dropzone input {
+  display: none;
+}
+
+.disease-submit {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1ba784 0%, #2f7cf6 100%);
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 1rem 1.4rem;
+}
+
+.disease-result-panel {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.preview-card,
+.diagnosis-card {
+  border-radius: 1.6rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(241, 249, 255, 0.9));
+  padding: 1.2rem;
+}
+
+.preview-image {
+  display: block;
+  width: 100%;
+  max-height: 340px;
+  object-fit: cover;
+  border-radius: 1.2rem;
+}
+
+.preview-placeholder {
+  display: grid;
+  min-height: 240px;
+  place-items: center;
+  border-radius: 1.2rem;
+  color: #64748b;
+  background: rgba(226, 232, 240, 0.55);
+}
+
+.disease-explanation-card {
+  margin-top: 1.2rem;
+}
+
+.disease-waiting-copy {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .disease-upload-panel,
+  .disease-result-panel {
+    padding: 1.35rem;
+  }
+}

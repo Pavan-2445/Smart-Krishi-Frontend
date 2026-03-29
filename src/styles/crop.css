@@ -1,0 +1,80 @@
+.crop-form-panel,
+.crop-result-panel {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 2rem;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 68px rgba(81, 127, 173, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.crop-form-panel {
+  padding: 2rem;
+}
+
+.form-panel-glow {
+  position: absolute;
+  inset: -20% auto auto 60%;
+  height: 14rem;
+  width: 14rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(27, 167, 132, 0.16), transparent 70%);
+}
+
+.field-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  border-radius: 1.35rem;
+  background: linear-gradient(180deg, rgba(241, 251, 246, 0.96), rgba(242, 248, 255, 0.94));
+  padding: 1rem;
+  color: #24405d;
+  font-weight: 700;
+}
+
+.field-card input {
+  border: 1px solid rgba(98, 129, 170, 0.16);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.9rem 1rem;
+  color: #334155;
+  outline: none;
+}
+
+.field-card input:focus {
+  border-color: rgba(47, 124, 246, 0.45);
+  box-shadow: 0 0 0 4px rgba(207, 229, 255, 0.72);
+}
+
+.crop-submit {
+  margin-top: 1.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #1ba784 0%, #2f7cf6 100%);
+  color: white;
+  cursor: pointer;
+  font-weight: 800;
+  padding: 1rem 1.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.crop-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 36px rgba(47, 124, 246, 0.2);
+}
+
+.crop-result-panel {
+  display: grid;
+  gap: 1.2rem;
+  align-content: start;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  .crop-form-panel,
+  .crop-result-panel {
+    padding: 1.35rem;
+  }
+}
